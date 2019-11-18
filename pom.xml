@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.github.edgar615</groupId>
+  <artifactId>nef-message</artifactId>
+  <version>0.0.1</version>
+
+  <properties>
+    <user.release.version>0.0.1</user.release.version>
+    <mysql.version>8.0.11</mysql.version>
+    <nef.commons.version>0.0.1</nef.commons.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.github.edgar615</groupId>
+      <artifactId>nef-commons</artifactId>
+      <version>${nef.commons.version}</version>
+    </dependency>
+  </dependencies>
+
+</project>
