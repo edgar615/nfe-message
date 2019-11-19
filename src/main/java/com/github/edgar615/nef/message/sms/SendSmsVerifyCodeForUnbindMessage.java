@@ -1,25 +1,27 @@
 package com.github.edgar615.nef.message.sms;
 
+import com.github.edgar615.message.codegen.BuildCodgen;
+import com.github.edgar615.message.codegen.NotNull;
+
 /**
- * 发送验证码短信
+ * 发送解绑的验证码
+ *
  * @author Administrator
  */
-public class SendSmsVerifyCodeMessage {
+@BuildCodgen(to = "v1.job.sms.verifycode.send", resource = "unbind")
+public class SendSmsVerifyCodeForUnbindMessage {
 
   /**
    * 应用ID
    */
+  @NotNull
   private Long appId;
 
   /**
    * 手机号码
    */
+  @NotNull
   private String phoneNumber;
-
-  /**
-   * 标识符
-   */
-  private String identifier;
 
   public Long getAppId() {
     return appId;
@@ -37,11 +39,4 @@ public class SendSmsVerifyCodeMessage {
     this.phoneNumber = phoneNumber;
   }
 
-  public String getIdentifier() {
-    return identifier;
-  }
-
-  public void setIdentifier(String identifier) {
-    this.identifier = identifier;
-  }
 }
