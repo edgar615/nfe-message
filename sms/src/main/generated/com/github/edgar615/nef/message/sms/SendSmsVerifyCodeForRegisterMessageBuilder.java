@@ -7,13 +7,13 @@ import java.util.Map;
 import java.util.Objects;
 
 /**
- * CodeGen at Tue Nov 19 18:13:38 CST 2019
+ * CodeGen at Wed Nov 20 09:21:43 CST 2019
  * @author CodeGen
  */
-public final class SendSmsVerifyCodeForForgotPwdMessageBuilder {
+public final class SendSmsVerifyCodeForRegisterMessageBuilder {
   private static final String to = "v1.job.sms.verifycode.send";
 
-  private static final String resource = "forgotpwd";
+  private static final String resource = "register";
 
   private static final Map<String, String> ext = new HashMap<>();
 
@@ -23,29 +23,29 @@ public final class SendSmsVerifyCodeForForgotPwdMessageBuilder {
 
   private String id;
 
-  private SendSmsVerifyCodeForForgotPwdMessageBuilder() {
+  private SendSmsVerifyCodeForRegisterMessageBuilder() {
   }
 
-  public static SendSmsVerifyCodeForForgotPwdMessageBuilder builder() {
-    return new SendSmsVerifyCodeForForgotPwdMessageBuilder();
+  public static SendSmsVerifyCodeForRegisterMessageBuilder builder() {
+    return new SendSmsVerifyCodeForRegisterMessageBuilder();
   }
 
-  public SendSmsVerifyCodeForForgotPwdMessageBuilder setAppId(Long appId) {
+  public SendSmsVerifyCodeForRegisterMessageBuilder setAppId(Long appId) {
     this.appId = appId;
     return this;
   }
 
-  public SendSmsVerifyCodeForForgotPwdMessageBuilder setPhoneNumber(String phoneNumber) {
+  public SendSmsVerifyCodeForRegisterMessageBuilder setPhoneNumber(String phoneNumber) {
     this.phoneNumber = phoneNumber;
     return this;
   }
 
-  public SendSmsVerifyCodeForForgotPwdMessageBuilder setId(String id) {
+  public SendSmsVerifyCodeForRegisterMessageBuilder setId(String id) {
     this.id = id;
     return this;
   }
 
-  public SendSmsVerifyCodeForForgotPwdMessageBuilder addExt(String key, String value) {
+  public SendSmsVerifyCodeForRegisterMessageBuilder addExt(String key, String value) {
     this.ext.put(key, value);
     return this;
   }
